@@ -1,10 +1,76 @@
 @import "tailwindcss";
-body {
-  font-family: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg: #0a0807;
+  --bg-2: #100c0a;
+  --accent: #ff7a1a;
+  --accent-2: #ffb070;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: #f5f1ec;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.01em;
+}
+
+/* Custom utilities */
+.text-gradient-warm {
+  background: linear-gradient(135deg, #ffd8a8 0%, #ff7a1a 60%, #c2410c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(15, 10, 8, 0.55);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #0a0807; }
+::-webkit-scrollbar-thumb { background: #2a1c14; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #ff7a1a; }
+
+/* Subtle floating */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float-y { animation: floatY 6s ease-in-out infinite; }
+
+/* Marquee accent line shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-line {
+  background: linear-gradient(90deg, transparent, #ff7a1a, transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
 }
