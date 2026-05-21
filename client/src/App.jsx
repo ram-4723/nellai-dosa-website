@@ -101,16 +101,21 @@ function App() {
               </p>
             </motion.div>
 
-            <motion.h1
-              variants={fadeUp}
-              className="font-display text-[64px] md:text-[120px] font-bold leading-[0.95] tracking-tight"
-            >
-              Nellai
-              <br />
-              <span className="text-gradient-warm italic">Dosa</span>
-            </motion.h1>
+           <motion.h1
+  variants={fadeUp}
+  className="font-display text-[64px] md:text-[120px] font-bold leading-[0.95] tracking-tight italic"
+>
+  <span className="text-orange-400">
+    Nellai
+  </span>
 
-            <motion.div variants={fadeUp} className="mt-8 h-px w-24 shimmer-line" />
+  <br />
+
+  <span className="text-white">
+    Dosa
+  </span>
+</motion.h1>
+          
 
             <motion.p
               variants={fadeUp}
