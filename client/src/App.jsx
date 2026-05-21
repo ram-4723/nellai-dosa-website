@@ -356,14 +356,14 @@ function App() {
               className="relative rounded-3xl overflow-hidden h-[500px] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)] border border-white/10"
             >
               <iframe
-                title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.194660859855!2d72.9967!3d19.0760"
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: "grayscale(0.4) contrast(1.1)" }}
-                allowFullScreen=""
-                loading="lazy"
-              />
+  title="map"
+  src="https://www.google.com/maps?q=South+Indian+Dosa+Plaza+Breakfast,+Palm+Beach+Road,+Vashi,+Navi+Mumbai&output=embed"
+  width="100%"
+  height="100%"
+  style={{ border: 0, filter: "grayscale(0.4) contrast(1.1)" }}
+  allowFullScreen=""
+  loading="lazy"
+/>
               <div className="absolute inset-0 ring-1 ring-inset ring-orange-400/10 rounded-3xl pointer-events-none" />
             </motion.div>
           </div>
