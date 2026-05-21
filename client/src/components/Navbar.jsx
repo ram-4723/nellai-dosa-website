@@ -1,16 +1,66 @@
+import logoImg from "../assets/images/logo.png"
 function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between px-8 py-5 bg-transparent absolute top-0 text-white">
-      <h1 className="text-2xl font-bold text-orange-400">
-        Nellai Dosa
-      </h1>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md shadow-lg border-b border-white/10">
 
-      <ul className="flex gap-8 text-lg">
-        <li className="cursor-pointer hover:text-orange-400 transition duration-550">Home</li>
-        <li className="cursor-pointer hover:text-orange-400 transition duration-550">Menu</li>
-        <li className="cursor-pointer hover:text-orange-400 transition duration-700">About</li>
-        <li className="cursor-pointer hover:text-orange-400 transition duration-700">Contact</li>
-      </ul>
+      <div className="flex items-center justify-between px-8 md:px-20 py-5 text-white">
+
+        {/* LOGO */}
+
+        <a href="#home">
+
+  <img
+    src={logoImg}
+    alt="Nellai Dosa Logo"
+    className="h-24 md:h-28 object-contain"
+  />
+
+</a>
+
+        {/* NAV LINKS */}
+
+        <ul className="flex gap-8 md:gap-14 text-2xl font-semibold">
+
+          <li>
+            <a
+              href="#home"
+              className="hover:text-orange-400 transition duration-300"
+            >
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#menu"
+              className="hover:text-orange-400 transition duration-300"
+            >
+              Menu
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#about"
+              className="hover:text-orange-400 transition duration-300"
+            >
+              About
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              className="hover:text-orange-400 transition duration-300"
+            >
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </nav>
   )
 }

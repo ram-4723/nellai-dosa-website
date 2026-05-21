@@ -6,6 +6,16 @@ import vadaImg from "./assets/images/vada.png"
 import foodImg from "./assets/images/food.png"
 import masaladosaImg from "./assets/images/masaladosa.png"
 import uttappamImg from "./assets/images/uttappam.png"
+import pooriImg from "./assets/images/poori.png"
+import dalriceImg from "./assets/images/dalrice.png"
+import pongalImg from "./assets/images/pongal.png"
+import coffeeImg from "./assets/images/coffee.png"
+import gheedosaImg from "./assets/images/gheedosa.png"
+import ravadosaImg from "./assets/images/ravadosa.png"
+import pulaoImg from "./assets/images/pulao.png"
+import sadauttappamImg from "./assets/images/sadauttappam.png"
+
+
 function App() {
   return (
     <div className="bg-black min-h-screen text-white overflow-x-hidden">
@@ -116,44 +126,42 @@ function App() {
 
   <MenuCard
     title="Pongal"
-    price="80"
-    image="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1974&auto=format&fit=crop"
-  />
+    price="70"
+    image={pongalImg}
+    />
 
   <MenuCard
     title="Filter Coffee"
-    price="30"
-    image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1974&auto=format&fit=crop"
-  />
-
+    price="20"
+    image={coffeeImg}
+/>
   <MenuCard
     title="Ghee Roast"
-    price="120"
-    image="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1974&auto=format&fit=crop"
-  />
-
+    price="80"
+    image={gheedosaImg}
+/>
   <MenuCard
-    title="Mini Tiffin"
-    price="140"
-    image="https://images.unsplash.com/photo-1546833999-b9f581a1996d?q=80&w=1974&auto=format&fit=crop"
+    title="Poori Bhaji"
+    price="60"
+    image={pooriImg}
   />
 
   <MenuCard
     title="Rava Dosa"
-    price="110"
-    image="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1974&auto=format&fit=crop"
+    price="70"
+    image={ravadosaImg}
   />
 
   <MenuCard
-    title="Poori Bhaji"
-    price="90"
-    image="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1974&auto=format&fit=crop"
+    title="Pulao"
+    price="60"
+    image={pulaoImg}
   />
 
   <MenuCard
-    title="Kesari Bath"
-    price="40"
-    image="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?q=80&w=1974&auto=format&fit=crop"
+    title="Sada Uttappam"
+    price="60"
+    image={sadauttappamImg}
   />
 
 </div>
@@ -258,10 +266,10 @@ function App() {
               </h3>
 
               <p className="text-gray-300 mt-3 text-lg leading-8">
-                Sector-19c, Plot No-58, Shop No-4, <br />
-                Navi Mumbai, Near Satra Plaza,<br />
-                Vashi, Palm Beach Road, Vashi,<br />
-                Navi Mumbai-400703, Maharashtra
+                Shop No-4, Plot No-58, Sector-19C, <br />
+                Near Satra Plaza,<br/>
+                Palm Beach Road, Vashi,<br />
+                Navi Mumbai-400703, Maharashtra.
           
               </p>
             </div>
@@ -286,9 +294,15 @@ function App() {
               </p>
             </div>
 
-            <button className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full text-lg font-semibold transition duration-300">
-              Get Directions
-            </button>
+            <a
+  href="https://www.google.com/maps/dir/19.0845385,73.0014038/South+Indian+Dosa+Plaza+Breakfast,+shop+no-4,+Palm+beach+road,+sector-19c,plot+no-58,+near+Satra+Plaza,+Vashi,+Navi+Mumbai,+Maharashtra+400703/@19.083055,72.9987217,1200m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7c1eacd0aeb8b:0xc35cf18f4ab6a5db!2m2!1d73.0061006!2d19.081758?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full text-lg font-semibold transition duration-300">
+    Get Directions
+  </button>
+</a>
 
           </div>
 
